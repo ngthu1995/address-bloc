@@ -21,6 +21,7 @@ module.exports = class MenuController {
         switch (response.mainMenuChoice) {
           case "Add new contact":
             this.addContact();
+            this.getDate();
             break;
           case "Exit":
             this.exit();
@@ -48,5 +49,11 @@ module.exports = class MenuController {
   exit() {
     console.log("Thanks for using AddressBloc!");
     process.exit();
+  }
+
+  getDate() {
+    var dateTime = new Date();
+    console.log(dateTime.toISOString().slice(0, 10));
+    this.main();
   }
 };
