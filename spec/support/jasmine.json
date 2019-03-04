@@ -1,0 +1,10 @@
+{
+  "spec_dir": "spec",
+  "spec_files": ["**/*[sS]pec.js"],
+  "scripts": {
+    "test": "export NODE_ENV=test && jasmine"
+  },
+  "helpers": ["helpers/**/*.js"],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}

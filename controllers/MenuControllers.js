@@ -56,4 +56,8 @@ module.exports = class MenuController {
     console.log(dateTime.toISOString().slice(0, 10));
     this.main();
   }
+
+  getContactCount() {
+    return this.contacts.length;
+  }
 };
